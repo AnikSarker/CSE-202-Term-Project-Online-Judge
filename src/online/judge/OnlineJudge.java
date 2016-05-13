@@ -29,7 +29,9 @@ public class OnlineJudge extends Application {
         
         LogInController controller=loader.getController();
         controller.setMain(this);
-
+        
+        //Anik's Project
+        
         
         Scene scene = new Scene(root);
         mainstage=stage;
