@@ -11,7 +11,13 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 
 /**
  *
@@ -22,11 +28,29 @@ public class LogInController implements Initializable {
     OnlineJudge main;
     
     @FXML
-    private Label label;
+    private TextField iTextField;
+    @FXML
+    private Text iNewUser;
+    @FXML
+    private Button iSignup;
+    @FXML
+    private GridPane IGrid;
+    private PasswordField iPasswordField;
+    @FXML
+    private TextField iUser;
+    @FXML
+    private PasswordField iPassword;
     
     @FXML
-    private void bLogIn(ActionEvent event) throws IOException {
-        main.showHomePage();
+    private void bHome(ActionEvent event) throws IOException {
+        if(iUser.getText().equals("a") && iPassword.getText().equals("1")) main.showHomeAdmin();
+        else main.showHomePage(); 
+    } 
+    
+    
+    @FXML
+    private void bRegister(ActionEvent event)throws IOException{
+        main.showRegister();
     }
     
     @Override

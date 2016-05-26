@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online.judge.HomePageController">
    <children>
@@ -33,30 +32,5 @@
             </MenuBar>
          </left>
       </BorderPane>
-      <Text layoutX="51.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Click on the &quot;CONTSTS&quot; menubar and join the upcoming contest." wrappingWidth="537.9999876022339">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="51.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, programmers. Welcome to our ONLINE JUDGE.  You can :">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="51.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Click on the &quot;PROBLEMSET&quot; menubar and practice interesting problems from the previous contests.">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="51.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Search for other user's profiles and learn their progress by clicking on the &quot;SEARCH&quot; menubar.">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="51.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We believe , tomorrow belongs to Coders. So, we have come forward towards you with a tool for your programming practice and developing of excellence. Make the best use of it. Thank you very much !!!" wrappingWidth="641.203125">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>

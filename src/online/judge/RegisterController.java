@@ -16,31 +16,29 @@ import javafx.scene.control.Label;
 /**
  * FXML Controller class
  *
- * @author Aspire
+ * @author Anik
  */
-public class HomePageController implements Initializable {
-
-    /**
-     * Initializes the controller class.
-     */
+public class RegisterController implements Initializable {
     
     OnlineJudge main;
+    
+    @FXML
     private Label label;
     
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
-        
     @FXML
     private void bLogIn(ActionEvent event) throws IOException {
         main.showLogIn();
     }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
         
+    }    
+    
     public void setMain(OnlineJudge scene){
         main=scene;
         
-    } 
+    }
     
 }
