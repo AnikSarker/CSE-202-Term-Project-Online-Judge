@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online.judge.RegisterController">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminFX.RegisterController">
    <children>
       <TextField editable="false" focusTraversable="false" layoutX="241.0" layoutY="120.0" prefHeight="51.0" prefWidth="319.0" text="  Sign Up for Online Judge">
          <font>

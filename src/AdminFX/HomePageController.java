@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package online.judge;
+package AdminFX;
+
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,36 +13,39 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import online.judge.AdminOnlineJudge;
 
 /**
  * FXML Controller class
  *
- * @author Anik
+ * @author Aspire
  */
-public class HomeAdminController implements Initializable {
-    OnlineJudge main;
+public class HomePageController implements Initializable {
+
+    /**
+     * Initializes the controller class.
+     */
     
-        
+    AdminOnlineJudge main;
+    private Label label;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
     
-    @FXML
-    private void bContestChoice(ActionEvent event) throws IOException{
-        main.showContestProblemChoice();
-    }
-    
+        
     @FXML
     private void bLogIn(ActionEvent event) throws IOException {
         main.showLogIn();
     }
-
-    public void setMain(OnlineJudge scene){
+    
+    public void bContestPage(ActionEvent event) throws IOException{
+        //main.showUserContestPage();
+    }
+        
+    public void setMain(AdminOnlineJudge scene){
         main=scene;
     } 
-
-    
-
     
 }

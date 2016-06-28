@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online.judge.HomeAdminController">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminFX.HomeAdminController">
    <children>
       <Hyperlink alignment="CENTER" layoutX="663.0" layoutY="47.0" onAction="#bLogIn" text="Log Out">
          <font>
@@ -34,7 +34,7 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <MenuButton layoutX="311.0" layoutY="103.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="158.0" text="SET CONTEST">
+      <MenuButton layoutX="311.0" layoutY="103.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="158.0" style="-fx-background-color: #009933;" text="SET CONTEST" textFill="WHITE">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#bContestChoice" text="Set a new contest" />
           <MenuItem mnemonicParsing="false" text="Set a previouse contest" />

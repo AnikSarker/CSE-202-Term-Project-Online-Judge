@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package online.judge;
+package ClientFX;
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,19 +7,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import online.judge.UserOnlineJudge;
 
-/**
- * FXML Controller class
- *
- * @author Aspire
- */
 public class HomePageController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
     
-    OnlineJudge main;
+    UserOnlineJudge main;
     private Label label;
     
     @Override
@@ -37,10 +28,25 @@ public class HomePageController implements Initializable {
     private void bLogIn(ActionEvent event) throws IOException {
         main.showLogIn();
     }
+    
+    public void bContestPage(ActionEvent event) throws IOException, InterruptedException{
+        main.showUserContestPage();
+    }
+    
+   public void showHome() throws IOException{
+        main.showHomePage();
+    }
+    
+    public void showUserStandings() throws IOException, InterruptedException{
+        main.showUserStandingsPage();
+    }
+    
+    public void showUserStatus() throws IOException, InterruptedException{
+        main.showUserStatusPage();
+    }
         
-    public void setMain(OnlineJudge scene){
+    public void setMain(UserOnlineJudge scene){
         main=scene;
-        
     } 
     
 }

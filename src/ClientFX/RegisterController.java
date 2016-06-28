@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package online.judge;
+package ClientFX;
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import online.judge.UserOnlineJudge;
 
 /**
  * FXML Controller class
@@ -20,7 +21,7 @@ import javafx.scene.control.Label;
  */
 public class RegisterController implements Initializable {
     
-    OnlineJudge main;
+    UserOnlineJudge main;
     
     @FXML
     private Label label;
@@ -36,7 +37,7 @@ public class RegisterController implements Initializable {
         
     }    
     
-    public void setMain(OnlineJudge scene){
+    public void setMain(UserOnlineJudge scene){
         main=scene;
         
     }

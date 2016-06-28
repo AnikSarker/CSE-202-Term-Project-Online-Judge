@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package online.judge;
+package AdminFX;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -18,6 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
+import online.judge.AdminOnlineJudge;
 
 /**
  *
@@ -25,7 +28,7 @@ import javafx.scene.text.Text;
  */
 public class LogInController implements Initializable {
     
-    OnlineJudge main;
+    AdminOnlineJudge main;
     
     @FXML
     private TextField iTextField;
@@ -59,7 +62,7 @@ public class LogInController implements Initializable {
         
     }    
     
-    public void setMain(OnlineJudge scene){
+    public void setMain(AdminOnlineJudge scene){
         main=scene;
         
     } 

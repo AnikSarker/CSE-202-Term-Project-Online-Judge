@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" pickOnBounds="false" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online.judge.LogInController">
+<AnchorPane id="AnchorPane" pickOnBounds="false" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminFX.LogInController">
    <children>
       <GridPane fx:id="IGrid" hgap="10.0" layoutX="295.0" layoutY="290.0" vgap="10.0" AnchorPane.leftAnchor="295.0">
         <columnConstraints>
@@ -45,7 +45,7 @@
             <PasswordField fx:id="iPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <TextField fx:id="iTextField" editable="false" layoutX="247.0" layoutY="119.0" prefHeight="51.0" prefWidth="306.0" text="Welcome to Online Judge">
+      <TextField fx:id="iTextField" editable="false" layoutX="247.0" layoutY="119.0" prefHeight="51.0" prefWidth="306.0" style="-fx-background-color: #00cc00;" text="Welcome to Online Judge">
          <font>
             <Font size="24.0" />
          </font>
